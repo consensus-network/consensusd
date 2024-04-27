@@ -52,7 +52,7 @@ $ consensusd
 ```
 
 ## Discord
-Join our discord server using the following link: https://discord.gg/sFSASsgx
+Join our discord server using the following link: https://discord.gg/fwMqPXes
 
 ## Issue Tracker
 
