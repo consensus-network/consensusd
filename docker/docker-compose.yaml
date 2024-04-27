@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+
+  consensusd:
+    container_name: consensusd
+    image: consensusnetwork/consensusd:latest
+    restart: unless-stopped
+    ports:
+      - "42110:42110/tcp"
+      - "42111:42111/tcp"
+    volumes:
+      - $HOME/.consensusd:/app/data/
+# use managed volumes
+#      - consensusd:/app/data/
+    command:  ./consensusd --utxoindex --connect=mainnet-dnsseed-1.consensuscoin.com --appdir=/app/data
